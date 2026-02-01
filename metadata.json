@@ -1,0 +1,8 @@
+{
+  "name": "Apex Acquisition Growth",
+  "description": "Elite B2B lead generation agency and proprietary AI Sales Intelligence Hub (SIH) for global business expansion.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

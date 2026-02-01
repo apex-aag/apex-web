@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Acquisition Growth | Elite B2B Outbound</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'apex-navy': '#0A2F4D',
+              'apex-green': '#00FFE0',
+              'apex-orange': '#FF6F3C',
+              'apex-dark': '#081422',
+              'apex-card': '#111420',
+              'apex-border': '#ffffff1a',
+              'apex-text-dim': '#B0B0B0',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Poppins', 'sans-serif'],
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --bg-gradient: radial-gradient(circle at top right, #0A2F4D 0%, #081422 100%);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background: #081422;
+        background: var(--bg-gradient);
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: 'Inter', sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      .glass-card {
+        background: rgba(17, 20, 32, 0.4);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .glass-card:hover {
+        border-color: rgba(0, 255, 224, 0.2);
+        background: rgba(17, 20, 32, 0.6);
+      }
+      .gradient-text {
+        background: linear-gradient(135deg, #FFFFFF 30%, #00FFE0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .btn-glow:hover {
+        box-shadow: 0 0 20px rgba(255, 111, 60, 0.4);
+      }
+      ::selection {
+        background: rgba(0, 255, 224, 0.2);
+        color: #00FFE0;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #081422;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0A2F4D;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00FFE0;
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      .animate-float {
+        animation: float 5s ease-in-out infinite;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
